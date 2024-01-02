@@ -1,6 +1,6 @@
 <Defs>
 
-    <ThingDef ParentName="MealCooked">
+	<ThingDef ParentName="MealCooked">
 		<defName>VCE_FineBake_Veg</defName>
 		<label>vegetarian fine bake</label>
 		<description>A complex bake assembled with care from a wide selection of vegetarian ingredients and flour.</description>
@@ -22,7 +22,7 @@
 
 	</ThingDef>
 
-    <ThingDef ParentName="MealCooked">
+	<ThingDef ParentName="MealCooked">
 		<defName>VCE_LavishBake_Veg</defName>
 		<label>vegetarian lavish bake</label>
 		<description>A masterpiece of the culinary arts made from vegetarian ingredients, this bake nourishes the body, mind, and soul.</description>
@@ -44,10 +44,11 @@
 
 	</ThingDef>
 
-    <ThingDef ParentName="MealCooked">
+	<ThingDef ParentName="MealCooked">
 		<defName>VCE_GourmetBake_Veg</defName>
 		<label>vegetarian gourmet bake</label>
 		<description>A culinary work of art made from vegetarian ingredients, characterized by refined, even elaborate preparation and presentation of an aesthetically balanced, albeit low quantity bake.</description>
+		<thingClass>VanillaCookingExpanded.GourmetMeal</thingClass>
 		<graphicData>
 			<texPath>Things/Meals/BakeGourmet_Veg</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -64,11 +65,6 @@
 			<ingestEffect>EatVegetarian</ingestEffect>
 			<ingestSound>Meal_Eat</ingestSound>
 		</ingestible>
-		<comps>
-			<li Class="VanillaCookingExpanded.CompProperties_StackByCondiments">
-				<condimentTagToCheck>Condiments</condimentTagToCheck>
-			</li>
-		</comps>
 	</ThingDef>
 
 </Defs>

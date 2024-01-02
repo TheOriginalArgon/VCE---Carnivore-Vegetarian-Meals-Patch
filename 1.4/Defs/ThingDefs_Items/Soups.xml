@@ -1,7 +1,7 @@
 <Defs>
 
-    <!-- Uncooked Soups -->
-    <ThingDef ParentName="RoughPlantBase">
+	<!-- Uncooked Soups -->
+	<ThingDef ParentName="RoughPlantBase">
 		<defName>VCE_UncookedSoupFine_Veg</defName>
 		<label>uncooked vegetarian fine soup</label>
 		<description>An uncooked vegetarian fine soup. This needs to be cooked in an electric pot to be edible.</description>
@@ -15,7 +15,7 @@
 			<WorkToMake>1800</WorkToMake>
 			<Mass>4</Mass>
 		</statBases>
-		<thingSetMakerTags/>
+		<thingSetMakerTags />
 		<tradeability>None</tradeability>
 		<comps>
 			<li Class="CompProperties_Rottable">
@@ -23,17 +23,17 @@
 				<rotDestroys>true</rotDestroys>
 			</li>
 			<li Class="CompProperties_Ingredients" />
-			
+
 		</comps>
 		<thingCategories>
 			<li>VCE_UncookedSoups</li>
 		</thingCategories>
 		<ingestible>
-			<preferability>NeverForNutrition</preferability>			
+			<preferability>NeverForNutrition</preferability>
 		</ingestible>
 
 	</ThingDef>
-    <ThingDef ParentName="RoughPlantBase">
+	<ThingDef ParentName="RoughPlantBase">
 		<defName>VCE_UncookedSoupFine_Carn</defName>
 		<label>uncooked carnivore fine soup</label>
 		<description>An uncooked carnivore fine soup. This needs to be cooked in an electric pot to be edible.</description>
@@ -47,7 +47,7 @@
 			<WorkToMake>1800</WorkToMake>
 			<Mass>4</Mass>
 		</statBases>
-		<thingSetMakerTags/>
+		<thingSetMakerTags />
 		<tradeability>None</tradeability>
 		<comps>
 			<li Class="CompProperties_Rottable">
@@ -55,18 +55,18 @@
 				<rotDestroys>true</rotDestroys>
 			</li>
 			<li Class="CompProperties_Ingredients" />
-			
+
 		</comps>
 		<thingCategories>
 			<li>VCE_UncookedSoups</li>
 		</thingCategories>
 		<ingestible>
-			<preferability>NeverForNutrition</preferability>			
+			<preferability>NeverForNutrition</preferability>
 		</ingestible>
 
 	</ThingDef>
 
-    <ThingDef ParentName="RoughPlantBase">
+	<ThingDef ParentName="RoughPlantBase">
 		<defName>VCE_UncookedSoupLavish_Veg</defName>
 		<label>uncooked vegetarian lavish soup</label>
 		<description>An uncooked vegetarian lavish soup. This needs to be cooked in an electric pot to be edible.</description>
@@ -81,7 +81,7 @@
 			<Mass>4</Mass>
 
 		</statBases>
-		<thingSetMakerTags/>
+		<thingSetMakerTags />
 		<tradeability>None</tradeability>
 		<comps>
 			<li Class="CompProperties_Rottable">
@@ -89,18 +89,18 @@
 				<rotDestroys>true</rotDestroys>
 			</li>
 			<li Class="CompProperties_Ingredients" />
-			
+
 		</comps>
 		<thingCategories>
 			<li>VCE_UncookedSoups</li>
 		</thingCategories>
 		<ingestible>
-			<preferability>NeverForNutrition</preferability>			
+			<preferability>NeverForNutrition</preferability>
 		</ingestible>
 
 	</ThingDef>
 
-    <ThingDef ParentName="RoughPlantBase">
+	<ThingDef ParentName="RoughPlantBase">
 		<defName>VCE_UncookedSoupLavish_Carn</defName>
 		<label>uncooked carnivore lavish soup</label>
 		<description>An uncooked carnivore lavish soup. This needs to be cooked in an electric pot to be edible.</description>
@@ -115,7 +115,7 @@
 			<Mass>4</Mass>
 
 		</statBases>
-		<thingSetMakerTags/>
+		<thingSetMakerTags />
 		<tradeability>None</tradeability>
 		<comps>
 			<li Class="CompProperties_Rottable">
@@ -123,21 +123,22 @@
 				<rotDestroys>true</rotDestroys>
 			</li>
 			<li Class="CompProperties_Ingredients" />
-			
+
 		</comps>
 		<thingCategories>
 			<li>VCE_UncookedSoups</li>
 		</thingCategories>
 		<ingestible>
-			<preferability>NeverForNutrition</preferability>			
+			<preferability>NeverForNutrition</preferability>
 		</ingestible>
 
 	</ThingDef>
 
-    <ThingDef ParentName="RoughPlantBase">
+	<ThingDef ParentName="RoughPlantBase">
 		<defName>VCE_UncookedSoupGourmet_Veg</defName>
 		<label>uncooked vegetarian gourmet soup</label>
 		<description>An uncooked vegetarian gourmet soup. This needs to be cooked in an electric pot to be edible.</description>
+		<thingClass>VanillaCookingExpanded.GourmetMeal</thingClass>
 		<graphicData>
 			<texPath>Things/Items/Uncooked/UncookedSoupGourmet_Veg</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -149,7 +150,7 @@
 			<Mass>4</Mass>
 
 		</statBases>
-		<thingSetMakerTags/>
+		<thingSetMakerTags />
 		<tradeability>None</tradeability>
 		<comps>
 			<li Class="CompProperties_Rottable">
@@ -157,23 +158,21 @@
 				<rotDestroys>true</rotDestroys>
 			</li>
 			<li Class="CompProperties_Ingredients" />
-			<li Class="VanillaCookingExpanded.CompProperties_StackByCondiments">
-				<condimentTagToCheck>Condiments</condimentTagToCheck>
-			</li>
 		</comps>
 		<thingCategories>
 			<li>VCE_UncookedSoups</li>
 		</thingCategories>
 		<ingestible>
-			<preferability>NeverForNutrition</preferability>			
+			<preferability>NeverForNutrition</preferability>
 		</ingestible>
 
 	</ThingDef>
 
-    <ThingDef ParentName="RoughPlantBase">
+	<ThingDef ParentName="RoughPlantBase">
 		<defName>VCE_UncookedSoupGourmet_Carn</defName>
 		<label>uncooked carnivore gourmet soup</label>
 		<description>An uncooked carnivore gourmet soup. This needs to be cooked in an electric pot to be edible.</description>
+		<thingClass>VanillaCookingExpanded.GourmetMeal</thingClass>
 		<graphicData>
 			<texPath>Things/Items/Uncooked/UncookedSoupGourmet_Carn</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -185,7 +184,7 @@
 			<Mass>4</Mass>
 
 		</statBases>
-		<thingSetMakerTags/>
+		<thingSetMakerTags />
 		<tradeability>None</tradeability>
 		<comps>
 			<li Class="CompProperties_Rottable">
@@ -193,21 +192,18 @@
 				<rotDestroys>true</rotDestroys>
 			</li>
 			<li Class="CompProperties_Ingredients" />
-			<li Class="VanillaCookingExpanded.CompProperties_StackByCondiments">
-				<condimentTagToCheck>Condiments</condimentTagToCheck>
-			</li>
 		</comps>
 		<thingCategories>
 			<li>VCE_UncookedSoups</li>
 		</thingCategories>
 		<ingestible>
-			<preferability>NeverForNutrition</preferability>			
+			<preferability>NeverForNutrition</preferability>
 		</ingestible>
 
 	</ThingDef>
 
-    <!-- Cooked Soups -->
-    <ThingDef ParentName="MealCooked">
+	<!-- Cooked Soups -->
+	<ThingDef ParentName="MealCooked">
 		<defName>VCE_CookedSoupFine_Veg</defName>
 		<label>vegetarian fine soup</label>
 		<stackLimit>10</stackLimit>
@@ -231,7 +227,7 @@
 
 	</ThingDef>
 
-    <ThingDef ParentName="MealCooked">
+	<ThingDef ParentName="MealCooked">
 		<defName>VCE_CookedSoupFine_Carn</defName>
 		<label>carnivore fine soup</label>
 		<stackLimit>10</stackLimit>
@@ -255,7 +251,7 @@
 
 	</ThingDef>
 
-    <ThingDef ParentName="MealCooked">
+	<ThingDef ParentName="MealCooked">
 		<defName>VCE_CookedSoupLavish_Veg</defName>
 		<label>vegetarian lavish soup</label>
 		<description>A masterpiece of the culinary arts made from vegetarian ingredients, this soup nourishes the body, mind, and soul.</description>
@@ -279,7 +275,7 @@
 
 	</ThingDef>
 
-    <ThingDef ParentName="MealCooked">
+	<ThingDef ParentName="MealCooked">
 		<defName>VCE_CookedSoupLavish_Carn</defName>
 		<label>carnivore lavish soup</label>
 		<description>A masterpiece of the culinary arts made from carnivore ingredients, this soup nourishes the body, mind, and soul.</description>
@@ -303,10 +299,11 @@
 
 	</ThingDef>
 
-    <ThingDef ParentName="MealCooked">
+	<ThingDef ParentName="MealCooked">
 		<defName>VCE_CookedSoupGourmet_Veg</defName>
 		<label>vegetarian gourmet soup</label>
 		<description>A culinary work of art made from vegetarian ingredients, characterized by refined, even elaborate preparation and presentation of an aesthetically balanced, albeit low quantity soup.</description>
+		<thingClass>VanillaCookingExpanded.GourmetMeal</thingClass>
 		<graphicData>
 			<texPath>Things/Meals/SoupGourmet_Veg</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -325,18 +322,13 @@
 			<ingestEffect>EatVegetarian</ingestEffect>
 			<ingestSound>Ingest_Drink</ingestSound>
 		</ingestible>
-		<comps>
-			<li Class="VanillaCookingExpanded.CompProperties_StackByCondiments">
-				<condimentTagToCheck>Condiments</condimentTagToCheck>
-			</li>
-
-		</comps>
 	</ThingDef>
 
-    <ThingDef ParentName="MealCooked">
+	<ThingDef ParentName="MealCooked">
 		<defName>VCE_CookedSoupGourmet_Carn</defName>
 		<label>carnivore gourmet soup</label>
 		<description>A culinary work of art made from carnivore ingredients, characterized by refined, even elaborate preparation and presentation of an aesthetically balanced, albeit low quantity soup.</description>
+		<thingClass>VanillaCookingExpanded.GourmetMeal</thingClass>
 		<graphicData>
 			<texPath>Things/Meals/SoupGourmet_Carn</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -355,12 +347,6 @@
 			<ingestEffect>EatVegetarian</ingestEffect>
 			<ingestSound>Ingest_Drink</ingestSound>
 		</ingestible>
-		<comps>
-			<li Class="VanillaCookingExpanded.CompProperties_StackByCondiments">
-				<condimentTagToCheck>Condiments</condimentTagToCheck>
-			</li>
-
-		</comps>
 	</ThingDef>
 
 </Defs>
