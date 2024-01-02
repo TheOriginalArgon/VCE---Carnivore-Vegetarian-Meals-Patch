@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	
+	<ItemProcessor.CombinationDef>
+		<defName>VCE_FineSoupRecipe_Veg</defName>
+		<building>VCE_ElectricPot</building>
+		<items>
+			<li>VCE_UncookedSoupFine_Veg</li>
+		</items>	
+		<amount>
+			<li>1</li>
+		</amount>
+		<result>VCE_CookedSoupFine_Veg</result>	
+		<yield>10</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>2</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+	<ItemProcessor.CombinationDef>
+		<defName>VCE_FineSoupRecipe_Carn</defName>
+		<building>VCE_ElectricPot</building>
+		<items>
+			<li>VCE_UncookedSoupFine_Carn</li>
+		</items>	
+		<amount>
+			<li>1</li>
+		</amount>
+		<result>VCE_CookedSoupFine_Carn</result>	
+		<yield>10</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>2</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+	
+	<ItemProcessor.CombinationDef>
+		<defName>VCE_LavishSoupRecipe_Veg</defName>
+		<building>VCE_ElectricPot</building>
+		<items>
+			<li>VCE_UncookedSoupLavish_Veg</li>
+		</items>	
+		<amount>
+			<li>1</li>
+		</amount>
+		<result>VCE_CookedSoupLavish_Veg</result>	
+		<yield>10</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>2</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+	<ItemProcessor.CombinationDef>
+		<defName>VCE_LavishSoupRecipe_Carn</defName>
+		<building>VCE_ElectricPot</building>
+		<items>
+			<li>VCE_UncookedSoupLavish_Carn</li>
+		</items>	
+		<amount>
+			<li>1</li>
+		</amount>
+		<result>VCE_CookedSoupLavish_Carn</result>	
+		<yield>10</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>2</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+	
+	<ItemProcessor.CombinationDef>
+		<defName>VCE_GourmetSoupRecipe_Veg</defName>
+		<building>VCE_ElectricPot</building>
+		<items>
+			<li>VCE_UncookedSoupGourmet_Veg</li>
+		</items>	
+		<amount>
+			<li>1</li>
+		</amount>
+		<result>VCE_CookedSoupGourmet_Veg</result>	
+		<yield>10</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>2</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+	<ItemProcessor.CombinationDef>
+		<defName>VCE_GourmetSoupRecipe_Carn</defName>
+		<building>VCE_ElectricPot</building>
+		<items>
+			<li>VCE_UncookedSoupGourmet_Carn</li>
+		</items>	
+		<amount>
+			<li>1</li>
+		</amount>
+		<result>VCE_CookedSoupGourmet_Carn</result>	
+		<yield>10</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>2</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+
+
+
+
+
+
+
+
+</Defs>

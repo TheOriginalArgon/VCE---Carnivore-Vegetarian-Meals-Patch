@@ -1,0 +1,216 @@
+<Defs>
+
+    <RecipeDef ParentName="VCE_CookBakeMealBase">
+		<defName>VCE_CookBakeFine_Veg</defName>
+		<label>cook vegetarian fine bake x2</label>
+		<description>Cook two complex bakes assembled with care from a wide selection of vegetarian ingredients and flour.</description>
+		<jobString>Cooking vegetarian fine bake x2.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>ElectricStove</li>	
+			<li>FueledStove</li>			
+		</recipeUsers>
+
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>0.75</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VCE_Flour</li>
+					</thingDefs>
+				</filter>
+				<count>0.5</count>
+			</li>
+		</ingredients>
+		<products>
+			<VCE_FineBake_Veg>2</VCE_FineBake_Veg>
+		</products>
+		<skillRequirements>
+			<Cooking>6</Cooking>
+		</skillRequirements>
+	</RecipeDef>
+     <RecipeDef ParentName="VCE_CookBakeMealBase">
+		<defName>VCE_CookBakeFine_Veg_bulk</defName>
+		<label>cook vegetarian fine bake x8</label>
+		<description>Cook eight complex bakes assembled with care from a wide selection of vegetarian ingredients and flour.</description>
+		<jobString>Cooking vegetarian fine bake x8.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+        <workAmount>2700</workAmount>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>ElectricStove</li>	
+			<li>FueledStove</li>			
+		</recipeUsers>
+
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VCE_Flour</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<products>
+			<VCE_FineBake_Veg>8</VCE_FineBake_Veg>
+		</products>
+		<skillRequirements>
+			<Cooking>6</Cooking>
+		</skillRequirements>
+	</RecipeDef>
+
+    <RecipeDef ParentName="VCE_CookBakeMealBase">
+		<defName>VCE_CookBakeLavish_Veg</defName>
+		<label>cook vegetarian lavish bake x2</label>
+		<description>Cook two masterpieces of the culinary arts from vegetarian ingredients, these bakes nourish the body, mind, and soul.</description>
+		<jobString>Cooking vegetarian lavish bake x2.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>ElectricStove</li>	
+			<li>FueledStove</li>			
+		</recipeUsers>
+
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>2.5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VCE_Flour</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<VCE_LavishBake_Veg>2</VCE_LavishBake_Veg>
+		</products>
+		<skillRequirements>
+			<Cooking>8</Cooking>
+		</skillRequirements>
+	</RecipeDef>
+    <RecipeDef ParentName="VCE_CookBakeMealBase">
+		<defName>VCE_CookBakeLavish_Veg_bulk</defName>
+		<label>cook vegetarian lavish bake x8</label>
+		<description>Cook eight masterpieces of the culinary arts from vegetarian ingredients, these bakes nourish the body, mind, and soul.</description>
+		<jobString>Cooking vegetarian lavish bake x8.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+        <workAmount>4800</workAmount>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>ElectricStove</li>	
+			<li>FueledStove</li>			
+		</recipeUsers>
+
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VCE_Flour</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<products>
+			<VCE_LavishBake_Veg>8</VCE_LavishBake_Veg>
+		</products>
+		<skillRequirements>
+			<Cooking>8</Cooking>
+		</skillRequirements>
+	</RecipeDef>
+
+    <RecipeDef ParentName="VCE_CookGourmetBakeMealBase">
+		<defName>VCE_CookBakeGourmet_Veg</defName>
+		<label>cook vegetarian gourmet bake x2</label>
+		<description>Cook two culinary works of art from vegetarian ingredients, characterized by refined, even elaborate preparation and presentation of an aesthetically balanced, albeit low quantity bake.\n\nThis recipe does not allow mixed ingredients.</description>
+		<jobString>Cooking gourmet bake x2.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>false</allowMixingIngredients>
+		<ingredientValueGetterClass>VanillaCookingExpanded.IngredientValueGetter_NutritionWithExtraIngredient</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>ElectricStove</li>	
+			<li>FueledStove</li>			
+		</recipeUsers>
+
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>2.5</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>VCE_Condiments</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VCE_Flour</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<VCE_GourmetBake_Veg>2</VCE_GourmetBake_Veg>
+		</products>
+		<skillRequirements>
+			<Cooking>10</Cooking>
+		</skillRequirements>
+	</RecipeDef>
+
+</Defs>

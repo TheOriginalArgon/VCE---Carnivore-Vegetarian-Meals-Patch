@@ -1,0 +1,457 @@
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Vanilla Cooking Expanded - Stews</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs</xpath>
+                <value>
+                    <ThingDef ParentName="RoughPlantBase">
+                        <defName>VCE_UncookedStewFine_Veg</defName>
+                        <label>uncooked vegetarian fine stew</label>
+                        <description>An uncooked vegetarian fine stew. This needs to be cooked in a stew pot to be edible.</description>
+                        <graphicData>
+                            <texPath>Things/Items/Uncooked/UncookedStewFine_Veg</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                        </graphicData>
+                        <tradeability>None</tradeability>
+                        <thingSetMakerTags></thingSetMakerTags>
+                        <statBases>
+                            <MarketValue>153.45</MarketValue>
+                            <Flammability>1.3</Flammability>
+                            <WorkToMake>1800</WorkToMake>
+                        </statBases>
+                        <comps>
+                            <li Class="CompProperties_Rottable">
+                                <daysToRotStart>4</daysToRotStart>
+                                <rotDestroys>true</rotDestroys>
+                            </li>
+                            <li Class="CompProperties_Ingredients" />
+
+                        </comps>
+                        <thingCategories>
+                            <li>VCE_UncookedStews</li>
+                        </thingCategories>
+                        <ingestible>
+                            <preferability>NeverForNutrition</preferability>			
+                        </ingestible>
+                        
+                    </ThingDef>
+                    <ThingDef ParentName="RoughPlantBase">
+                        <defName>VCE_UncookedStewFine_Carn</defName>
+                        <label>uncooked carnivore fine stew</label>
+                        <description>An uncooked carnivore fine stew. This needs to be cooked in a stew pot to be edible.</description>
+                        <graphicData>
+                            <texPath>Things/Items/Uncooked/UncookedStewFine_Carn</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                        </graphicData>
+                        <tradeability>None</tradeability>
+                        <thingSetMakerTags></thingSetMakerTags>
+                        <statBases>
+                            <MarketValue>153.45</MarketValue>
+                            <Flammability>1.3</Flammability>
+                            <WorkToMake>1800</WorkToMake>
+                        </statBases>
+                        <comps>
+                            <li Class="CompProperties_Rottable">
+                                <daysToRotStart>4</daysToRotStart>
+                                <rotDestroys>true</rotDestroys>
+                            </li>
+                            <li Class="CompProperties_Ingredients" />
+
+                        </comps>
+                        <thingCategories>
+                            <li>VCE_UncookedStews</li>
+                        </thingCategories>
+                        <ingestible>
+                            <preferability>NeverForNutrition</preferability>			
+                        </ingestible>
+                        
+                    </ThingDef>
+
+                    <ThingDef ParentName="RoughPlantBase">
+                        <defName>VCE_UncookedStewLavish_Veg</defName>
+                        <label>uncooked vegetarian lavish stew</label>
+                        <description>An uncooked vegetarian lavish stew. This needs to be cooked in a stew pot to be edible.</description>
+                        <graphicData>
+                            <texPath>Things/Items/Uncooked/UncookedStewLavish_Veg</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                        </graphicData>
+                        <thingSetMakerTags></thingSetMakerTags>
+                        
+                        <statBases>
+                            <MarketValue>306.9</MarketValue>
+                            <Flammability>1.3</Flammability>
+                            <WorkToMake>3200</WorkToMake>
+
+                        </statBases>
+                        <tradeability>None</tradeability>
+                        <comps>
+                            <li Class="CompProperties_Rottable">
+                                <daysToRotStart>4</daysToRotStart>
+                                <rotDestroys>true</rotDestroys>
+                            </li>
+                            <li Class="CompProperties_Ingredients" />
+
+                        </comps>
+                        <thingCategories>
+                            <li>VCE_UncookedStews</li>
+                        </thingCategories>
+                        <ingestible>
+                            <preferability>NeverForNutrition</preferability>			
+                        </ingestible>
+                        
+                    </ThingDef>
+                    <ThingDef ParentName="RoughPlantBase">
+                        <defName>VCE_UncookedStewLavish_Carn</defName>
+                        <label>uncooked carnivore lavish stew</label>
+                        <description>An uncooked carnivore lavish stew. This needs to be cooked in a stew pot to be edible.</description>
+                        <graphicData>
+                            <texPath>Things/Items/Uncooked/UncookedStewLavish_Carn</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                        </graphicData>
+                        <thingSetMakerTags></thingSetMakerTags>
+                        
+                        <statBases>
+                            <MarketValue>306.9</MarketValue>
+                            <Flammability>1.3</Flammability>
+                            <WorkToMake>3200</WorkToMake>
+
+                        </statBases>
+                        <tradeability>None</tradeability>
+                        <comps>
+                            <li Class="CompProperties_Rottable">
+                                <daysToRotStart>4</daysToRotStart>
+                                <rotDestroys>true</rotDestroys>
+                            </li>
+                            <li Class="CompProperties_Ingredients" />
+
+                        </comps>
+                        <thingCategories>
+                            <li>VCE_UncookedStews</li>
+                        </thingCategories>
+                        <ingestible>
+                            <preferability>NeverForNutrition</preferability>			
+                        </ingestible>
+                        
+                    </ThingDef>
+
+                    <!-- Cooked Stews -->
+                    <ThingDef ParentName="MealCooked">
+                        <defName>VCE_CookedStewFine_Veg</defName>
+                        <label>vegetarian fine stew</label>
+                        <description>A complex stew assembled with care from a wide selection of vegetarian ingredients.</description>
+                        <graphicData>
+                            <texPath>Things/Meals/StewFine_Veg</texPath>
+                            <graphicClass>Graphic_StackCount</graphicClass>
+                        </graphicData>
+                        <statBases>
+                            <MarketValue>18</MarketValue>
+                            <Nutrition>0.9</Nutrition>
+                        </statBases>
+                        <ingestible>
+                            <preferability>MealFine</preferability>
+                            <ingestEffect>EatVegetarian</ingestEffect>
+                            <tasteThought>AteFineMeal</tasteThought>
+                            <ingestSound>Ingest_Drink</ingestSound>
+                        </ingestible>
+
+                    </ThingDef>
+                    <ThingDef ParentName="MealCooked">
+                        <defName>VCE_CookedStewFine_Carn</defName>
+                        <label>carnivore fine stew</label>
+                        <description>A complex stew assembled with care from a wide selection of carnivore ingredients.</description>
+                        <graphicData>
+                            <texPath>Things/Meals/StewFine_Carn</texPath>
+                            <graphicClass>Graphic_StackCount</graphicClass>
+                        </graphicData>
+                        <statBases>
+                            <MarketValue>18</MarketValue>
+                            <Nutrition>0.9</Nutrition>
+                        </statBases>
+                        <ingestible>
+                            <preferability>MealFine</preferability>
+                            <ingestEffect>EatVegetarian</ingestEffect>
+                            <tasteThought>AteFineMeal</tasteThought>
+                            <ingestSound>Ingest_Drink</ingestSound>
+                        </ingestible>
+
+                    </ThingDef>
+
+                    <ThingDef ParentName="MealCooked">
+                        <defName>VCE_CookedStewLavish_Veg</defName>
+                        <label>vegetarian lavish stew</label>
+                        <description>A masterpiece of the culinary arts made from vegetarian ingredients, this stew nourishes the body, mind, and soul.</description>
+                        <graphicData>
+                            <texPath>Things/Meals/StewLavish_Veg</texPath>
+                            <graphicClass>Graphic_StackCount</graphicClass>
+                        </graphicData>
+                        <statBases>
+                            <MarketValue>38</MarketValue>
+                            
+                            <Nutrition>1</Nutrition>
+                        </statBases>
+                        <ingestible>
+                            <preferability>MealLavish</preferability>
+                            <ingestEffect>EatVegetarian</ingestEffect>
+                            <tasteThought>AteLavishMeal</tasteThought>
+                            <ingestSound>Ingest_Drink</ingestSound>
+                        </ingestible>
+
+                    </ThingDef>
+                    <ThingDef ParentName="MealCooked">
+                        <defName>VCE_CookedStewLavish_Carn</defName>
+                        <label>carnivore lavish stew</label>
+                        <description>A masterpiece of the culinary arts made from carnivore ingredients, this stew nourishes the body, mind, and soul.</description>
+                        <graphicData>
+                            <texPath>Things/Meals/StewLavish_Carn</texPath>
+                            <graphicClass>Graphic_StackCount</graphicClass>
+                        </graphicData>
+                        <statBases>
+                            <MarketValue>38</MarketValue>
+                            
+                            <Nutrition>1</Nutrition>
+                        </statBases>
+                        <ingestible>
+                            <preferability>MealLavish</preferability>
+                            <ingestEffect>EatVegetarian</ingestEffect>
+                            <tasteThought>AteLavishMeal</tasteThought>
+                            <ingestSound>Ingest_Drink</ingestSound>
+                        </ingestible>
+
+                    </ThingDef>
+
+                    <!-- Combination Defs -->
+                    <ItemProcessor.CombinationDef>
+                        <defName>VCE_FineStewRecipe_Veg</defName>
+                        <building>VCE_StewPot</building>
+                        <items>
+                            <li>VCE_UncookedStewFine_Veg</li>
+                        </items>	
+                        <amount>
+                            <li>1</li>
+                        </amount>
+                        <result>VCE_CookedStewFine_Veg</result>	
+                        <yield>10</yield>
+                        <useQualityIncreasing>false</useQualityIncreasing>
+                        <singleTimeIfNotQualityIncreasing>3</singleTimeIfNotQualityIncreasing>
+                                <finishedProductMessage>VCE_FinishedFineStew</finishedProductMessage>
+
+                    </ItemProcessor.CombinationDef>
+                    <ItemProcessor.CombinationDef>
+                        <defName>VCE_FineStewRecipe_Carn</defName>
+                        <building>VCE_StewPot</building>
+                        <items>
+                            <li>VCE_UncookedStewFine_Carn</li>
+                        </items>	
+                        <amount>
+                            <li>1</li>
+                        </amount>
+                        <result>VCE_CookedStewFine_Carn</result>	
+                        <yield>10</yield>
+                        <useQualityIncreasing>false</useQualityIncreasing>
+                        <singleTimeIfNotQualityIncreasing>3</singleTimeIfNotQualityIncreasing>
+                                <finishedProductMessage>VCE_FinishedFineStew</finishedProductMessage>
+
+                    </ItemProcessor.CombinationDef>
+
+                    <ItemProcessor.CombinationDef>
+                        <defName>VCE_LavishStewRecipe_Veg</defName>
+                        <building>VCE_StewPot</building>
+                        <items>
+                            <li>VCE_UncookedStewLavish_Veg</li>
+                        </items>	
+                        <amount>
+                            <li>1</li>
+                        </amount>
+                        <result>VCE_CookedStewLavish_Veg</result>	
+                        <yield>10</yield>
+                        <useQualityIncreasing>false</useQualityIncreasing>
+                        <singleTimeIfNotQualityIncreasing>3</singleTimeIfNotQualityIncreasing>
+                                        <finishedProductMessage>VCE_FinishedLavishStew</finishedProductMessage>
+
+                    </ItemProcessor.CombinationDef>
+                    <ItemProcessor.CombinationDef>
+                        <defName>VCE_LavishStewRecipe_Carn</defName>
+                        <building>VCE_StewPot</building>
+                        <items>
+                            <li>VCE_UncookedStewLavish_Carn</li>
+                        </items>	
+                        <amount>
+                            <li>1</li>
+                        </amount>
+                        <result>VCE_CookedStewLavish_Carn</result>	
+                        <yield>10</yield>
+                        <useQualityIncreasing>false</useQualityIncreasing>
+                        <singleTimeIfNotQualityIncreasing>3</singleTimeIfNotQualityIncreasing>
+                                        <finishedProductMessage>VCE_FinishedLavishStew</finishedProductMessage>
+
+                    </ItemProcessor.CombinationDef>
+
+                    <!-- Add Recipes -->
+                    <RecipeDef ParentName="CookMealBase">
+                        <defName>VCE_CookStewFine_Veg</defName>
+                        <label>prepare vegetarian fine stew</label>
+                        <description>Prepare a fine uncooked stew assembled with care from a wide selection of vegetarian ingredients.</description>
+                        <jobString>Preparing vegetarian fine stew.</jobString>
+                        <workSpeedStat>CookSpeed</workSpeedStat>
+                        <effectWorking>Cook</effectWorking>
+                        <soundWorking>Recipe_CookMeal</soundWorking>
+                        <allowMixingIngredients>true</allowMixingIngredients>
+                        <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+                        <recipeUsers>
+                            <li>Campfire</li>	
+                            <li>FueledStove</li>	
+                            <li>ElectricStove</li>			
+                        </recipeUsers>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <categories>
+                                        <li>PlantFoodRaw</li>
+                                    </categories>
+                                </filter>
+                                <count>5</count>
+                            </li>
+                        </ingredients>
+                        <products>
+                            <VCE_UncookedStewFine_Veg>1</VCE_UncookedStewFine_Veg>
+                        </products>
+                        <skillRequirements>
+                            <Cooking>4</Cooking>
+                        </skillRequirements>
+                        <researchPrerequisite>
+                            <li>VCE_StewCooking</li>
+                        </researchPrerequisite>
+                    </RecipeDef>
+                    <RecipeDef ParentName="CookMealBase">
+                        <defName>VCE_CookStewFine_Carn</defName>
+                        <label>prepare carnivore fine stew</label>
+                        <description>Prepare a fine uncooked stew assembled with care from a wide selection of carnivore ingredients.</description>
+                        <jobString>Preparing carnivore fine stew.</jobString>
+                        <workSpeedStat>CookSpeed</workSpeedStat>
+                        <effectWorking>Cook</effectWorking>
+                        <soundWorking>Recipe_CookMeal</soundWorking>
+                        <allowMixingIngredients>true</allowMixingIngredients>
+                        <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+                        <recipeUsers>
+                            <li>Campfire</li>	
+                            <li>FueledStove</li>	
+                            <li>ElectricStove</li>			
+                        </recipeUsers>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <categories>
+                                        <li>MeatRaw</li>
+                                        <li>AnimalProductRaw</li>
+                                    </categories>
+                                </filter>
+                                <count>5</count>
+                            </li>
+                        </ingredients>
+                        <products>
+                            <VCE_UncookedStewFine_Carn>1</VCE_UncookedStewFine_Carn>
+                        </products>
+                        <skillRequirements>
+                            <Cooking>4</Cooking>
+                        </skillRequirements>
+                        <researchPrerequisite>
+                            <li>VCE_StewCooking</li>
+                        </researchPrerequisite>
+                    </RecipeDef>
+
+                    <RecipeDef ParentName="CookMealBase">
+                        <defName>VCE_CookStewLavish_Veg</defName>
+                        <label>prepare vegetarian lavish stew</label>
+                        <description>Prepare a lavish uncooked stew from vegetarian ingredients. A masterpiece of the culinary arts, this stew nourishes the body, mind, and soul.</description>
+                        <jobString>Preparing vegetarian lavish Stew.</jobString>
+                        <workSpeedStat>CookSpeed</workSpeedStat>
+                        <effectWorking>Cook</effectWorking>
+                        <soundWorking>Recipe_CookMeal</soundWorking>
+                        <allowMixingIngredients>true</allowMixingIngredients>
+                        <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+                        <recipeUsers>
+                            <li>Campfire</li>	
+                            <li>FueledStove</li>
+                            <li>ElectricStove</li>			
+                        </recipeUsers>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <categories>
+                                        <li>PlantFoodRaw</li>
+                                    </categories>
+                                </filter>
+                                <count>9.5</count>
+                            </li>
+                        </ingredients>
+                        <products>
+                            <VCE_UncookedStewLavish_Veg>1</VCE_UncookedStewLavish_Veg>
+                        </products>
+                        <skillRequirements>
+                            <Cooking>8</Cooking>
+                        </skillRequirements>
+                        <researchPrerequisite>
+                            <li>VCE_StewCooking</li>
+                        </researchPrerequisite>
+                    </RecipeDef>
+
+                    <RecipeDef ParentName="CookMealBase">
+                        <defName>VCE_CookStewLavish_Carn</defName>
+                        <label>prepare carnivore lavish stew</label>
+                        <description>Prepare a lavish uncooked stew from carnivore ingredients. A masterpiece of the culinary arts, this stew nourishes the body, mind, and soul.</description>
+                        <jobString>Preparing carnivore lavish Stew.</jobString>
+                        <workSpeedStat>CookSpeed</workSpeedStat>
+                        <effectWorking>Cook</effectWorking>
+                        <soundWorking>Recipe_CookMeal</soundWorking>
+                        <allowMixingIngredients>true</allowMixingIngredients>
+                        <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+                        <recipeUsers>
+                            <li>Campfire</li>	
+                            <li>FueledStove</li>
+                            <li>ElectricStove</li>			
+                        </recipeUsers>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <categories>
+                                        <li>MeatRaw</li>
+                                        <li>AnimalProductRaw</li>
+                                    </categories>
+                                </filter>
+                                <count>9.5</count>
+                            </li>
+                        </ingredients>
+                        <products>
+                            <VCE_UncookedStewLavish_Carn>1</VCE_UncookedStewLavish_Carn>
+                        </products>
+                        <skillRequirements>
+                            <Cooking>8</Cooking>
+                        </skillRequirements>
+                        <researchPrerequisite>
+                            <li>VCE_StewCooking</li>
+                        </researchPrerequisite>
+                    </RecipeDef>
+
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ItemProcessor.ItemAcceptedDef[defName = "IP_StewPotFirstItem"]/items</xpath>
+                <value>
+                    <li>VCE_UncookedStewFine_Veg</li>	
+		        	<li>VCE_UncookedStewLavish_Veg</li>	
+                    <li>VCE_UncookedStewFine_Carn</li>	
+		        	<li>VCE_UncookedStewLavish_Carn</li>	
+                </value>
+            </li>
+        </operations>
+    </match>
+</Operation>
+
+</Patch>

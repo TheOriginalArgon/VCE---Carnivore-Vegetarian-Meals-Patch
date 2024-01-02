@@ -1,0 +1,238 @@
+<Defs>
+
+    <RecipeDef ParentName="CookMealBase">
+		<defName>VCE_CookSoupFine_Veg</defName>
+		<label>prepare vegetarian fine soup</label>
+		<description>Prepare a fine uncooked soup assembled with care from a wide selection of vegetarian ingredients.</description>
+		<jobString>Preparing vegetarian fine soup.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>ElectricStove</li>	
+			<li>FueledStove</li>			
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<products>
+			<VCE_UncookedSoupFine_Veg>1</VCE_UncookedSoupFine_Veg>
+		</products>
+		<skillRequirements>
+			<Cooking>6</Cooking>
+		</skillRequirements>
+		<researchPrerequisite>
+			<li>VCE_SoupCooking</li>
+		</researchPrerequisite>
+	</RecipeDef>
+    <RecipeDef ParentName="CookMealBase">
+		<defName>VCE_CookSoupFine_Carn</defName>
+		<label>prepare carnivore fine soup</label>
+		<description>Prepare a fine uncooked soup assembled with care from a wide selection of carnivore ingredients.</description>
+		<jobString>Preparing carnivore fine soup.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>ElectricStove</li>	
+			<li>FueledStove</li>			
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+						<li>AnimalProductRaw</li>
+					</categories>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<products>
+			<VCE_UncookedSoupFine_Carn>1</VCE_UncookedSoupFine_Carn>
+		</products>
+		<skillRequirements>
+			<Cooking>6</Cooking>
+		</skillRequirements>
+		<researchPrerequisite>
+			<li>VCE_SoupCooking</li>
+		</researchPrerequisite>
+	</RecipeDef>
+
+
+
+	<RecipeDef ParentName="CookMealBase">
+		<defName>VCE_CookSoupLavish_Veg</defName>
+		<label>prepare vegetarian lavish soup</label>
+		<description>Prepare a lavish uncooked soup from vegetarian ingretients. A masterpiece of the culinary arts, this soup nourishes the body, mind, and soul.</description>
+		<jobString>Preparing vegetarian lavish soup.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>ElectricStove</li>	
+			<li>FueledStove</li>			
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>9.5</count>
+			</li>
+		</ingredients>
+		<products>
+			<VCE_UncookedSoupLavish_Veg>1</VCE_UncookedSoupLavish_Veg>
+		</products>
+		<skillRequirements>
+			<Cooking>8</Cooking>
+		</skillRequirements>
+		<researchPrerequisite>
+			<li>VCE_SoupCooking</li>
+		</researchPrerequisite>
+	</RecipeDef>
+    <RecipeDef ParentName="CookMealBase">
+		<defName>VCE_CookSoupLavish_Carn</defName>
+		<label>prepare carnivore lavish soup</label>
+		<description>Prepare a lavish uncooked soup from carnivore ingretients. A masterpiece of the culinary arts, this soup nourishes the body, mind, and soul.</description>
+		<jobString>Preparing carnivore lavish soup.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>ElectricStove</li>	
+			<li>FueledStove</li>			
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+						<li>AnimalProductRaw</li>
+					</categories>
+				</filter>
+				<count>9.5</count>
+			</li>
+		</ingredients>
+		<products>
+			<VCE_UncookedSoupLavish_Carn>1</VCE_UncookedSoupLavish_Carn>
+		</products>
+		<skillRequirements>
+			<Cooking>8</Cooking>
+		</skillRequirements>
+		<researchPrerequisite>
+			<li>VCE_SoupCooking</li>
+		</researchPrerequisite>
+	</RecipeDef>
+
+	
+
+
+	<RecipeDef ParentName="VCE_CookGourmetMealBase">
+		<defName>VCE_CookSoupGourmet_Veg</defName>
+		<label>prepare vegetarian gourmet soup</label>
+		<description>Prepare a gourmet uncooked soup from vegetarian ingredients. A culinary work of art, characterized by refined, even elaborate preparation and presentation of an aesthetically balanced, albeit low quantity soup.\n\nThis recipe does not allow mixed ingredients, and takes a long time to make.</description>
+		<jobString>Preparing vegetarian gourmet soup.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>false</allowMixingIngredients>
+		<ingredientValueGetterClass>VanillaCookingExpanded.IngredientValueGetter_NutritionWithExtraIngredient</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>ElectricStove</li>	
+			<li>FueledStove</li>			
+		</recipeUsers>
+
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>VCE_Condiments</li>
+					</categories>
+				</filter>
+				<count>7</count>
+			</li>
+
+		</ingredients>
+		<products>
+			<VCE_UncookedSoupGourmet_Veg>1</VCE_UncookedSoupGourmet_Veg>
+		</products>
+		<skillRequirements>
+			<Cooking>10</Cooking>
+		</skillRequirements>
+		<researchPrerequisite>
+			<li>VCE_SoupCooking</li>
+		</researchPrerequisite>
+	</RecipeDef>
+    <RecipeDef ParentName="VCE_CookGourmetMealBase">
+		<defName>VCE_CookSoupGourmet_Carn</defName>
+		<label>prepare carnivore gourmet soup</label>
+		<description>Prepare a gourmet uncooked soup from carnivore ingredients. A culinary work of art, characterized by refined, even elaborate preparation and presentation of an aesthetically balanced, albeit low quantity soup.\n\nThis recipe does not allow mixed ingredients, and takes a long time to make.</description>
+		<jobString>Preparing carnivore gourmet soup.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>false</allowMixingIngredients>
+		<ingredientValueGetterClass>VanillaCookingExpanded.IngredientValueGetter_NutritionWithExtraIngredient</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>ElectricStove</li>	
+			<li>FueledStove</li>			
+		</recipeUsers>
+
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+						<li>AnimalProductRaw</li>
+					</categories>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>VCE_Condiments</li>
+					</categories>
+				</filter>
+				<count>7</count>
+			</li>
+
+		</ingredients>
+		<products>
+			<VCE_UncookedSoupGourmet_Carn>1</VCE_UncookedSoupGourmet_Carn>
+		</products>
+		<skillRequirements>
+			<Cooking>10</Cooking>
+		</skillRequirements>
+		<researchPrerequisite>
+			<li>VCE_SoupCooking</li>
+		</researchPrerequisite>
+	</RecipeDef>
+
+</Defs>

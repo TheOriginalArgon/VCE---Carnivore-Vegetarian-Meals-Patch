@@ -1,0 +1,74 @@
+<Defs>
+
+    <ThingDef ParentName="MealCooked">
+		<defName>VCE_FineBake_Veg</defName>
+		<label>vegetarian fine bake</label>
+		<description>A complex bake assembled with care from a wide selection of vegetarian ingredients and flour.</description>
+		<graphicData>
+			<texPath>Things/Meals/BakeFine_Veg</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>20</MarketValue>
+			<WorkToMake>675</WorkToMake>
+			<Nutrition>0.8</Nutrition>
+		</statBases>
+		<ingestible>
+			<preferability>MealFine</preferability>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<tasteThought>AteFineMeal</tasteThought>
+			<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+
+	</ThingDef>
+
+    <ThingDef ParentName="MealCooked">
+		<defName>VCE_LavishBake_Veg</defName>
+		<label>vegetarian lavish bake</label>
+		<description>A masterpiece of the culinary arts made from vegetarian ingredients, this bake nourishes the body, mind, and soul.</description>
+		<graphicData>
+			<texPath>Things/Meals/BakeLavish_Veg</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>40</MarketValue>
+			<WorkToMake>1200</WorkToMake>
+			<Nutrition>0.9</Nutrition>
+		</statBases>
+		<ingestible>
+			<preferability>MealLavish</preferability>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<tasteThought>AteLavishMeal</tasteThought>
+			<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+
+	</ThingDef>
+
+    <ThingDef ParentName="MealCooked">
+		<defName>VCE_GourmetBake_Veg</defName>
+		<label>vegetarian gourmet bake</label>
+		<description>A culinary work of art made from vegetarian ingredients, characterized by refined, even elaborate preparation and presentation of an aesthetically balanced, albeit low quantity bake.</description>
+		<graphicData>
+			<texPath>Things/Meals/BakeGourmet_Veg</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>70</MarketValue>
+			<WorkToMake>2250</WorkToMake>
+			<Nutrition>0.7</Nutrition>
+		</statBases>
+		<ingestible>
+			<preferability>MealLavish</preferability>
+			<optimalityOffsetHumanlikes>20</optimalityOffsetHumanlikes>
+			<tasteThought>VCE_AteGourmetMeal</tasteThought>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+		<comps>
+			<li Class="VanillaCookingExpanded.CompProperties_StackByCondiments">
+				<condimentTagToCheck>Condiments</condimentTagToCheck>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>
