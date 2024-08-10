@@ -1,0 +1,129 @@
+<Patch>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ItemProcessor.ItemAcceptedDef [defName = "IP_ElectricPotFirstItem"]/items</xpath>
+    <value>		
+		<li>VCE_UncookedSoupFine_Veg</li>	
+		<li>VCE_UncookedSoupLavish_Veg</li>	
+		<li>VCE_UncookedSoupGourmet_Veg</li>
+        <li>VCE_UncookedSoupFine_Carn</li>	
+		<li>VCE_UncookedSoupLavish_Carn</li>	
+		<li>VCE_UncookedSoupGourmet_Carn</li>
+    </value>
+</Operation>
+
+<!-- Add to the awesome soop pot :3 -->
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Advanced soup pot</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ItemProcessor.ItemAcceptedDef [defName = "IP_AdvacedPotFirstItem"]/items</xpath>
+				<value>		
+					<li>VCE_UncookedSoupFine_Veg</li>	
+					<li>VCE_UncookedSoupLavish_Veg</li>	
+					<li>VCE_UncookedSoupGourmet_Veg</li>
+					<li>VCE_UncookedSoupFine_Carn</li>	
+					<li>VCE_UncookedSoupLavish_Carn</li>	
+					<li>VCE_UncookedSoupGourmet_Carn</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs</xpath>
+				<value>
+					<ItemProcessor.CombinationDef>
+						<defName>ASP_FineSoupRecipe_Veg</defName>
+						<building>ASP_SoupPot</building>
+						<items>
+							<li>VCE_UncookedSoupFine_Veg</li>
+						</items>	
+						<amount>
+							<li>1</li>
+						</amount>
+						<result>VCE_CookedSoupFine_Veg</result>	
+						<yield>10</yield>
+						<useQualityIncreasing>false</useQualityIncreasing>
+						<singleTimeIfNotQualityIncreasing>0.9</singleTimeIfNotQualityIncreasing>
+					</ItemProcessor.CombinationDef>
+					<ItemProcessor.CombinationDef>
+						<defName>ASP_FineSoupRecipe_Carn</defName>
+						<building>ASP_SoupPot</building>
+						<items>
+							<li>VCE_UncookedSoupFine_Carn</li>
+						</items>	
+						<amount>
+							<li>1</li>
+						</amount>
+						<result>VCE_CookedSoupFine_Carn</result>	
+						<yield>10</yield>
+						<useQualityIncreasing>false</useQualityIncreasing>
+						<singleTimeIfNotQualityIncreasing>0.9</singleTimeIfNotQualityIncreasing>
+					</ItemProcessor.CombinationDef>
+
+					<ItemProcessor.CombinationDef>
+						<defName>ASP_LavishSoupRecipe_Veg</defName>
+						<building>ASP_SoupPot</building>
+						<items>
+							<li>VCE_UncookedSoupLavish_Veg</li>
+						</items>	
+						<amount>
+							<li>1</li>
+						</amount>
+						<result>VCE_CookedSoupLavish_Veg</result>	
+						<yield>10</yield>
+						<useQualityIncreasing>false</useQualityIncreasing>
+						<singleTimeIfNotQualityIncreasing>1</singleTimeIfNotQualityIncreasing>
+					</ItemProcessor.CombinationDef>
+					<ItemProcessor.CombinationDef>
+						<defName>ASP_LavishSoupRecipe_Carn</defName>
+						<building>ASP_SoupPot</building>
+						<items>
+							<li>VCE_UncookedSoupLavish_Carn</li>
+						</items>	
+						<amount>
+							<li>1</li>
+						</amount>
+						<result>VCE_CookedSoupLavish_Carn</result>	
+						<yield>10</yield>
+						<useQualityIncreasing>false</useQualityIncreasing>
+						<singleTimeIfNotQualityIncreasing>1</singleTimeIfNotQualityIncreasing>
+					</ItemProcessor.CombinationDef>
+
+					<ItemProcessor.CombinationDef>
+						<defName>ASP_GourmetSoupRecipe_Veg</defName>
+						<building>ASP_SoupPot</building>
+						<items>
+							<li>VCE_UncookedSoupGourmet_Veg</li>
+						</items>	
+						<amount>
+							<li>1</li>
+						</amount>
+						<result>VCE_CookedSoupGourmet_Veg</result>	
+						<yield>10</yield>
+						<useQualityIncreasing>false</useQualityIncreasing>
+						<singleTimeIfNotQualityIncreasing>1.2</singleTimeIfNotQualityIncreasing>
+					</ItemProcessor.CombinationDef>
+					<ItemProcessor.CombinationDef>
+						<defName>ASP_GourmetSoupRecipe_Carn</defName>
+						<building>ASP_SoupPot</building>
+						<items>
+							<li>VCE_UncookedSoupGourmet_Carn</li>
+						</items>	
+						<amount>
+							<li>1</li>
+						</amount>
+						<result>VCE_CookedSoupGourmet_Carn</result>	
+						<yield>10</yield>
+						<useQualityIncreasing>false</useQualityIncreasing>
+						<singleTimeIfNotQualityIncreasing>1.2</singleTimeIfNotQualityIncreasing>
+					</ItemProcessor.CombinationDef>
+				</value>
+			</li>
+		</operations>
+	</match>
+</Operation>
+
+</Patch>

@@ -1,0 +1,49 @@
+<Defs>
+
+	<ThingDef ParentName="MealCooked">
+		<defName>VCE_MealGourmet_Veg</defName>
+		<label>vegetarian gourmet meal</label>
+		<description>A culinary work of art made from vegetarian ingredients, characterized by refined, even elaborate preparation and presentation of an aesthetically balanced, albeit low quantity meal.</description>
+		<thingClass>VanillaCookingExpanded.GourmetMeal</thingClass>
+		<graphicData>
+			<texPath>Things/Meals/Gourmet_Veg</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>70</MarketValue>
+			<WorkToMake>1500</WorkToMake>
+			<Nutrition>0.7</Nutrition>
+		</statBases>
+		<ingestible>
+			<preferability>MealLavish</preferability>
+			<optimalityOffsetHumanlikes>20</optimalityOffsetHumanlikes>
+			<tasteThought>VCE_AteGourmetMeal</tasteThought>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+	</ThingDef>
+
+	<ThingDef ParentName="MealCooked">
+		<defName>VCE_MealGourmet_Carn</defName>
+		<label>carnivore gourmet meal</label>
+		<description>A culinary work of art made from carnivore ingredients, characterized by refined, even elaborate preparation and presentation of an aesthetically balanced, albeit low quantity meal.</description>
+		<thingClass>VanillaCookingExpanded.GourmetMeal</thingClass>
+		<graphicData>
+			<texPath>Things/Meals/Gourmet_Carn</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>70</MarketValue>
+			<WorkToMake>1500</WorkToMake>
+			<Nutrition>0.7</Nutrition>
+		</statBases>
+		<ingestible>
+			<preferability>MealLavish</preferability>
+			<optimalityOffsetHumanlikes>20</optimalityOffsetHumanlikes>
+			<tasteThought>VCE_AteGourmetMeal</tasteThought>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+	</ThingDef>
+
+</Defs>

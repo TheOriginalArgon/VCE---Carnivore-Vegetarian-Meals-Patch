@@ -1,0 +1,86 @@
+<Defs>
+
+    <RecipeDef ParentName="VCE_CookGourmetMealBase">
+    <defName>VCE_CookMealGourmet_Veg</defName>
+    <label>cook vegetarian gourmet meal</label>
+    <description>Cook a culinary work of art from vegetarian ingredients, characterized by refined, even elaborate preparation and presentation of an aesthetically balanced, albeit low quantity meal.</description>
+    <jobString>Cooking vegetarian gourmet meal.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>VanillaCookingExpanded.IngredientValueGetter_NutritionWithExtraIngredient</ingredientValueGetterClass>
+	<recipeUsers>
+		<li>ElectricStove</li>	
+		<li>FueledStove</li>			
+	</recipeUsers>
+	
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+        </filter>
+        <count>2.5</count>
+      </li>
+	  <li>
+        <filter>
+          <categories>
+            <li>VCE_Condiments</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <VCE_MealGourmet_Veg>1</VCE_MealGourmet_Veg>
+    </products>
+    <skillRequirements>
+      <Cooking>10</Cooking>
+    </skillRequirements>
+  </RecipeDef>
+
+  <RecipeDef ParentName="VCE_CookGourmetMealBase">
+    <defName>VCE_CookMealGourmet_Carn</defName>
+    <label>cook carnivore gourmet meal</label>
+    <description>Cook a culinary work of art from carnivore ingredients, characterized by refined, even elaborate preparation and presentation of an aesthetically balanced, albeit low quantity meal.</description>
+    <jobString>Cooking carnivore gourmet meal.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>VanillaCookingExpanded.IngredientValueGetter_NutritionWithExtraIngredient</ingredientValueGetterClass>
+	<recipeUsers>
+		<li>ElectricStove</li>	
+		<li>FueledStove</li>			
+	</recipeUsers>
+	
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+            <li>AnimalProductRaw</li>
+          </categories>
+        </filter>
+        <count>2.5</count>
+      </li>
+	  <li>
+        <filter>
+          <categories>
+            <li>VCE_Condiments</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <VCE_MealGourmet_Carn>1</VCE_MealGourmet_Carn>
+    </products>
+    <skillRequirements>
+      <Cooking>10</Cooking>
+    </skillRequirements>
+  </RecipeDef>
+
+</Defs>
